@@ -1,0 +1,29 @@
+<html>
+  <head>
+   <script>
+     var ticket;
+       ticket_cost=150;
+       var total_cost=0;
+        ticket=parseInt(window.prompt("enter ticket","0"));
+ 	  if(ticket>=6 && ticket<=0)
+ 	    alert("booking is not possible");
+     else if(ticket>=1 && ticket<=2)
+            {
+              total_cost=ticket_cost*ticket;
+               document.write("total_cost"+total_cost);
+                document.write("<br>");
+                 }
+             else
+                 {
+                   total_cost=ticket_cost*ticket;
+                    document.write("total_cost"+total_cost);
+                     document.write("<br>");
+                       discount=total_cost*0.05;
+                         document.write("discount"+discount);
+                           document.write("<br>");
+                             amt_to_paid=total_cost-discount;
+                               document.write("amt_to_paid"+amt_to_paid); 
+                     }
+            </script>
+           </head>
+    </html>    
