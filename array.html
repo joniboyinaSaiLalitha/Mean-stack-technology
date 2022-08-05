@@ -1,0 +1,34 @@
+<html>
+ <head>
+  </head>
+   <body style='background-color:pink'>
+   <font color="green">
+     <h2 align=center style='color:orange' id="demo"></h2>
+     <h3 align=right style='color:blue' id="hello"></h3>
+     <h4 align=left style='color:green' id="hai"></h4>
+    <script>
+      const m=["MEC","CSE","IT","EEE"];
+      document.write("<b style='color:green'>");
+      m.toString();
+      document.write(m,"<br>","</b>");
+      m.pop();
+      document.write(m,"<br>");
+      m.push("AE");
+      document.write(m,"</br>");
+       m.sort();
+      document.write(m,"</br>");
+       document.write(m.join("&"),"<br>");
+        m.unshift("CVL");
+       document.write(m);
+       document.getElementById("demo").innerHTML=m.join(" * ");
+        document.getElementById("hello").innerHTML=m.shift();
+         document.getElementById("hai").innerHTML=m.unshift("AI&DS");
+             document.write(m.unshift("AI&DS","</br>"));
+       </script>
+     </font>
+   </body>
+</html>
+      
+      
+      
+      
