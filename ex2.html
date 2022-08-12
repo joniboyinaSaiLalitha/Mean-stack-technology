@@ -1,13 +1,56 @@
 <html>
  <head>
-   <script>
-       var radius;
-        const PI=3.14;
-      radius=window.prompt("enter radius","20");
-         document.write("radius is:"+radius);
-      var result=PI*radius*radius;
-       document.write("area:"+result);
-     </script>
-   </head>
+  <body style='background-color:skyblue'>
+  <script>
+ const days=["sunday", "monday","tuesday","wednesday","thursday","friday","saturday"];
+   
+  var d=new Date();
+   document.write("<font color='green'>");
+   document.write(d);
+   document.write("</font>");
+  
+  var day=d.getDay();
+ document.write("<br>"+"<font color='red'>");
+document.write("Day is"+day+" "+days[day]);
+ document.write("</font>");
+ 
+var month=d.getMonth();
+ document.write("<br>"+"<font color='blue'>");
+ document.write("Month is"+(month+1));
+document.write("</font>");
+
+ var year=d.getFullYear();
+ document.write("<br>"+"<font color='red'>");
+ document.write("Year is"+year);
+document.write("</font>");
+
+var hours=d.getHours();
+ document.write("<br>"+"<font color='yellow'>");
+ document.write("Hours is"+hours);
+document.write("</font>");
+
+var time=d.getTime();
+ document.write("<br>"+"<font color='pink'>");
+ document.write("Time is"+time);
+document.write("</font>");
+
+var minutes=d.getMinutes();
+document.write("<br>"+"<font color='blue'>");
+ document.write("Minutes is"+minutes);
+document.write("</font>");
+
+var seconds=d.getSeconds();
+document.write("<br>"+"<font color='black'>");
+ document.write("seconds is"+seconds);
+document.write("</font>");
+
+var millseconds=d.getMillseconds();
+document.write("<br>"+"<font color='pink'>");
+ document.write("millseconds is"+millseconds);
+document.write("</font>");
+
+
+   </script>
+</body>
+ </head>
 </html>
-    
