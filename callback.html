@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<h2 id="demo1"></h2>
+<h1 id="demo"></h1>
+<script>
+var x,y;
+function add(x,y,callback)
+{
+document.getElementById("demo1").innerHTML="SUM="+x+y;
+callback();
+}
+function f1()
+{
+var d=new Date();
+{
+document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+}
+add(7,9,f1);
+setInterval(f1,1000);
+setTimeout(f1,9000);
+
+</script>
+</body>
+</html>
+
+
