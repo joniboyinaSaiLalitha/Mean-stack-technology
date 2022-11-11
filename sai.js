@@ -1,8 +1,8 @@
-const http = require("http");
-var server = http.createServer((req, res) => {
-  res.write("Hello World! I have created my first server!");
- res.write("nodemon Example Program!");
-  res.end();
-});
-server.listen(3000);
-console.log("Server started... Running on localhost:3000");
+const express=require('express');
+const app=express();
+const mongoose=require('mongoose');
+mongoose.connect("mongodb://127.0.0.1:27017//sai",(err)=>{
+if(err)
+console.log("DB Not Connected-Error");
+else
+console.log("DB Connected");});

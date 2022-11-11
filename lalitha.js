@@ -12,11 +12,14 @@ age:Number,
 phno:Number
 });
 const nm=new mongoose.model("records",ns);
-nm.findOne({},function(err,data){
-if(err){
-   console.log(err);
-}
-else{
-console.log("First function call:",data); 
-}    
+
+
+nm.insertMany([
+    { name: 'Gopal', age: 28},
+    { name: 'Rakesh', age: 45},
+    { name: 'Vasu', age: 34}
+]).then(function(){
+    console.log("Data inserted") 
+}).catch(function(error){
+    console.log(error)      
 });

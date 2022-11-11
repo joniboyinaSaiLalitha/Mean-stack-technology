@@ -12,11 +12,6 @@ age:Number,
 phno:Number
 });
 const nm=new mongoose.model("records",ns);
-nm.findOne({},function(err,data){
-if(err){
-   console.log(err);
-}
-else{
-console.log("First function call:",data); 
-}    
-});
+
+const data=new nm({name:'sugar(ARJUN-519)',age:'50',phno:'123456788'});
+data.save();
